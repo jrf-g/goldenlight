@@ -1,0 +1,15 @@
+﻿<Page x:Class="GoldenLight.HeaderPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GoldenLight"
+      mc:Ignorable="d"
+      Title="HeaderPage" Height="107" Width="364" >
+
+    <Grid Background="Black" >
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Goldenlight" FontFamily="Sitka Heading" Foreground="#FFCAA420" Height="104" Width="348" FontSize="72" VerticalAlignment="Top"/>
+        <TextBlock Margin="92,70,0,0" TextWrapping="Wrap" Text="Reviving the old Web" Foreground="#FFCAA420" FontFamily="Sitka Subheading" FontStyle="Italic" Width="157" TextAlignment="Center" FontSize="16" Height="22" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
