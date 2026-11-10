@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:GoldenLight"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary Source="/ResDict.xaml">
+            
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

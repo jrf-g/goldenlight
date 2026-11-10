@@ -8,8 +8,8 @@
         Title="Goldenlight - Reviving the old Web" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" MinWidth="18"/>
             <ColumnDefinition/>
-            <ColumnDefinition Width="39*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="82*"/>
@@ -19,9 +19,9 @@
             <RowDefinition Height="18*"/>
         </Grid.RowDefinitions>
         <Frame Source="/HeaderPage.xaml" Grid.ColumnSpan="2"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,2,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="&#xE730;" FontFamily="Segoe Fluent Icons" Grid.Row="1" Height="12" Width="12"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Goldenlight apps have full device access." VerticalAlignment="Center" LineHeight="6" Width="770" Grid.Column="1" Height="18" Grid.Row="1" FontFamily="Segoe UI Variable Small"/>
-        <TextBox x:Name="UrlBox" HorizontalAlignment="Stretch" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="18" Grid.ColumnSpan="2" >
+        <TextBlock HorizontalAlignment="Right" Margin="0,2,0,0" TextWrapping="Wrap" VerticalAlignment="Bottom" Text="&#xE730;" FontFamily="Segoe Fluent Icons" Grid.Row="1" Height="12" Background="{DynamicResource WarningColor}"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Goldenlight apps have full device access." VerticalAlignment="Center" LineHeight="6" Width="770" Grid.Column="1" Height="18" Grid.Row="1" FontFamily="Segoe UI Variable Small" Background="{DynamicResource WarningColor}"/>
+        <TextBox x:Name="UrlBox" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="18" Grid.ColumnSpan="2" BorderBrush="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" CaretBrush="#FF262626" Background="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}" SelectionBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" SelectionTextBrush="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}" Margin="3,0,10,0" >
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>

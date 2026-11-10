@@ -31,7 +31,8 @@ namespace GoldenLight
             if (MessageBox.Show($"You are running a script from {url}. Goldenlight has not verified this script.\n" +
                 $"So, only continue if you trust the source.\n\n" +
                 $"We cannot confirm the software" +
-                $" has any protection or warranty.\n\n" +
+                $" has any protection or warranty, or that " +
+                $"it is safe to use.\n\n" +
                 $"Click OK to continue, or Cancel to cancel.\n" , "Confirmation",
                 MessageBoxButton.OKCancel, MessageBoxImage.Stop,
                 MessageBoxResult.Cancel) == MessageBoxResult.Cancel)
@@ -48,7 +49,8 @@ namespace GoldenLight
             catch (Exception ex) { MessageBox.Show($"Error! Cannot fetch the script. {ex}"); }
             try
             {
-                await Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.Create(code, ScriptOptions.Default.WithReferences(typeof(object).Assembly, typeof(Enumerable).Assembly).WithImports(["System", "Microsoft", "System.Collections.Generic", "System.Linq", "System.Console", "System.IO"])).RunAsync();
+                await Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.Create(code, ScriptOptions.Default.WithReferences(typeof(object).Assembly,
+                    typeof(Enumerable).Assembly).WithImports(["System", "Microsoft", "System.Collections.Generic", "System.Linq", "System.IO"])).RunAsync();
             }
             catch (Exception ex) { MessageBox.Show($"Error! Cannot run the script. {ex}"); }
         }
