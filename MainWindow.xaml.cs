@@ -28,12 +28,9 @@ namespace GoldenLight
         {
             string url = UrlBox.Text;
             string code = "";
-            if (MessageBox.Show($"You are running a script from {url}. Goldenlight has not verified this script.\n" +
+            if (MessageBox.Show($"You are running a script from\n\"{url}\"\nGoldenlight has not verified this script.\n" +
                 $"So, only continue if you trust the source.\n\n" +
-                $"We cannot confirm the software" +
-                $" has any protection or warranty, or that " +
-                $"it is safe to use.\n\n" +
-                $"Click OK to continue, or Cancel to cancel.\n" , "Confirmation",
+                $"Click OK to continue, or Cancel to cancel." , "Confirmation",
                 MessageBoxButton.OKCancel, MessageBoxImage.Stop,
                 MessageBoxResult.Cancel) == MessageBoxResult.Cancel)
             {
