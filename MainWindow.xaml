@@ -14,11 +14,6 @@
                 <EasingColorKeyFrame KeyTime="00:00:00.5000000" Value="#FF929292"/>
                 <EasingColorKeyFrame KeyTime="00:00:01" Value="#FFDDDDDD"/>
             </ColorAnimationUsingKeyFrames>
-            <StringAnimationUsingKeyFrames Storyboard.TargetName="PlayBtn" Storyboard.TargetProperty="(b:Interaction.Triggers)[0].(b:EventTrigger.EventName)">
-                <DiscreteStringKeyFrame KeyTime="00:00:00.2000000" Value="MouseEnter"/>
-                <DiscreteStringKeyFrame KeyTime="00:00:00.5000000" Value="Loaded"/>
-                <DiscreteStringKeyFrame KeyTime="00:00:01" Value="MouseEnter"/>
-            </StringAnimationUsingKeyFrames>
         </Storyboard>
     </Window.Resources>
     <Grid>
