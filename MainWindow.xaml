@@ -36,7 +36,7 @@
                 <DropShadowEffect/>
             </TextBox.Effect>
         </TextBox>
-        <Button x:Name="PlayBtn" Content="&#xE768;" Margin="3,3,10,0" Grid.Row="3" VerticalAlignment="Top" Height="280" FontFamily="Segoe Fluent Icons" FontSize="72" Click="PlayBtn_Click" Grid.ColumnSpan="2" Background="#FFDDDDDD">
+        <Button Style="{DynamicResource PlayButtonStyle}" x:Name="PlayBtn" Content="&#xE768;" Margin="3,3,10,0" Grid.Row="3" VerticalAlignment="Top" Height="280" FontFamily="Segoe Fluent Icons" FontSize="72" Click="PlayBtn_Click" Grid.ColumnSpan="2" Background="#FFDDDDDD">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
