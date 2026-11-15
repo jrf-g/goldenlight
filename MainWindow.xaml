@@ -14,6 +14,26 @@
                 <EasingColorKeyFrame KeyTime="00:00:00.5000000" Value="#FF929292"/>
                 <EasingColorKeyFrame KeyTime="00:00:01" Value="#FFDDDDDD"/>
             </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="PlayBtn" Storyboard.TargetProperty="(Control.Foreground).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:00.2000000" Value="Black"/>
+                <EasingColorKeyFrame KeyTime="00:00:00.5330000" Value="#FF213799"/>
+                <EasingColorKeyFrame KeyTime="00:00:00.7000000" Value="Black"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PlayBtn" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.9000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PlayBtn" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.9000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PlayBtn" Storyboard.TargetProperty="(Control.FontSize)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="72"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="48"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="72"/>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </Window.Resources>
     <Grid>
@@ -36,7 +56,7 @@
                 <DropShadowEffect/>
             </TextBox.Effect>
         </TextBox>
-        <Button Style="{DynamicResource PlayButtonStyle}" x:Name="PlayBtn" Content="&#xE768;" Margin="3,3,10,0" Grid.Row="3" VerticalAlignment="Top" Height="280" FontFamily="Segoe Fluent Icons" FontSize="72" Click="PlayBtn_Click" Grid.ColumnSpan="2" Background="#FFDDDDDD">
+        <Button Style="{DynamicResource PlayButtonStyle}" x:Name="PlayBtn" Content="&#xE768;" Margin="3,3,10,0" Grid.Row="3" VerticalAlignment="Top" Height="280" FontFamily="Segoe Fluent Icons" FontSize="72" Click="PlayBtn_Click" Grid.ColumnSpan="2" Background="#FFDDDDDD" Foreground="Black" RenderTransformOrigin="0.5,0.5">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
